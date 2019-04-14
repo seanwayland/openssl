@@ -137,11 +137,13 @@ int main(int count, char *strings[])
     int server;
     char *portnum;
 
+    /***
     if(!isRoot())
     {
         printf("This program must be run as root/sudo user!!");
         exit(0);
     }
+     **/
     if ( count != 2 )
     {
         printf("Usage: %s <portnum>\n", strings[0]);
